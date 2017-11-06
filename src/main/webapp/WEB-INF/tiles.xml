@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+       
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp" />  
+        <put-attribute name="menu" value="" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp" />  
+    </definition>   
+    
+     <!-- ContactUs Page -->
+   <definition name="login" extends="base.definition">  
+       <put-attribute name="title" value="Log In" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />  
+   </definition>
+    
+    <!-- ContactUs Page -->
+   <definition name="welcome" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />  
+   </definition> 
+   
+   <definition name="getorderdetails" extends="base.definition">  
+       <put-attribute name="title" value="GerOrderDetails" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/getorderdetails.jsp" />  
+   </definition> 
+   
+   <definition name="getencorderdetails" extends="base.definition">  
+       <put-attribute name="title" value="GerOrderDetails" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/getencorderdetails.jsp" />  
+   </definition> 
+     
+   <definition name="orderdetails" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/orderdetails.jsp" />  
+   </definition> 
+ 
+   <definition name="register" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />  
+   </definition> 
+   
+    <definition name="password" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/password.jsp" />  
+   </definition> 
+   
+    <definition name="successPwd" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/successPwd.jsp" />  
+   </definition> 
+ 
+   <definition name="populate" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/populate.jsp" />  
+   </definition> 
+   
+    <definition name="mapdisplay" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/mapdisplay.jsp" />  
+   </definition> 
+  
+</tiles-definitions>  
